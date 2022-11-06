@@ -1,6 +1,7 @@
 // importing from our carousel package
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import { Container, Row, Col } from "react-bootstrap";
 
 export const Skills = () => {
   const responsive = {
@@ -22,4 +23,19 @@ export const Skills = () => {
       items: 1,
     },
   };
+
+  return (
+    <section className="skill" id="skills">
+      <Container>
+        <Row>
+          <Col>
+            <div className="skill-bx">
+              <h2>Skills</h2>
+              <p>Lorem ipsum more text to sample what will be written here</p>
+            </div>
+          </Col>
+        </Row>
+      </Container>
+    </section>
+  );
 };
