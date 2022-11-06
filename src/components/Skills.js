@@ -51,9 +51,9 @@ export const Skills = () => {
                 <div className="item">
                   <img src={meter3} alt="Image" />
                   <h5>Api fetching</h5>
-                </div>{" "}
+                </div>
                 <div className="item">
-                  <img src={""} alt="Image" />
+                  <img src={meter2} alt="Image" />
                   <h5>Back-End Development</h5>
                 </div>
               </Carousel>
