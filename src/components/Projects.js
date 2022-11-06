@@ -44,6 +44,17 @@ export const Projects = () => {
                 </Nav.Item>
                 {/* need to add tab pane tomorrow for projects */}
               </Nav>
+              <Tab.Content>
+                <Tab.Pane eventKey="first">
+                  <Row>
+                    {projects.map((project, index) => {
+                      return <p>{project.title}</p>;
+                    })}
+                  </Row>
+                </Tab.Pane>
+                <Tab.Pane eventKey="second">Lorem Ipsum</Tab.Pane>
+                <Tab.Pane eventKey="third">Lorem Ipsum</Tab.Pane>
+              </Tab.Content>
             </Tab.Container>
           </Col>
         </Row>
