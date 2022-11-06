@@ -32,6 +32,16 @@ export const Skills = () => {
             <div className="skill-bx">
               <h2>Skills</h2>
               <p>Lorem ipsum more text to sample what will be written here</p>
+              <Carousel
+                responsive={responsive}
+                infinite={true}
+                className="skill-slider"
+              >
+                <div className="item">
+                  <img src={""} alt="Image" />
+                  <h5>Web Development</h5>
+                </div>
+              </Carousel>
             </div>
           </Col>
         </Row>
