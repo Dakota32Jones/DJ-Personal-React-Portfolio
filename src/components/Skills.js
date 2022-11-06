@@ -2,6 +2,9 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { Container, Row, Col } from "react-bootstrap";
+import meter1 from "../assets/images/meter1.png";
+import meter2 from "../assets/images/meter2.png";
+import meter3 from "../assets/images/meter3.png";
 
 export const Skills = () => {
   const responsive = {
@@ -38,8 +41,20 @@ export const Skills = () => {
                 className="skill-slider"
               >
                 <div className="item">
-                  <img src={""} alt="Image" />
+                  <img src={meter1} alt="Image" />
                   <h5>Web Development</h5>
+                </div>
+                <div className="item">
+                  <img src={meter2} alt="Image" />
+                  <h5>Code configuration</h5>
+                </div>
+                <div className="item">
+                  <img src={meter3} alt="Image" />
+                  <h5>Api fetching</h5>
+                </div>{" "}
+                <div className="item">
+                  <img src={""} alt="Image" />
+                  <h5>Back-End Development</h5>
                 </div>
               </Carousel>
             </div>
