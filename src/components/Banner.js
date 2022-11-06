@@ -32,7 +32,23 @@ export const Banner = () => {
   const tick = () => {
     let i = loopNum % toRotate.length;
     let fullText = toRotate[i];
-    let updatedText = isDeleting;
+    let updatedText = isDeleting
+      ? fullText.substring(0, text.length - 1)
+      : fullText.substring(0, text.length + 1);
+
+    setText(updatedText);
+    if (isDeleting) {
+      setDelta((prevDelta) => prevDelta / 2);
+    }
+
+    if (!isDeleting && updatedText === fullText) {
+      setIsDeleting(true);
+      setDelta(period);
+    } else if (isDeleting && updatedText === "") {
+      setIsDeleting(false);
+      setLoopNum(loopNum + 1);
+      setDelta(500);
+    }
   };
   return (
     <section className="banner" id="home">
@@ -42,7 +58,7 @@ export const Banner = () => {
             <span className="tagline">Check out my portfolio!</span>
             <h1>
               {`Hello I am Dakota Jones`}
-              <span className="wrap">Aspiring Full Stack Developer</span>
+              <span className="wrap">{text}</span>
             </h1>
             <p>lorem Ipsum is fun to write</p>
             <button onClick={() => console.log("connect")}>
