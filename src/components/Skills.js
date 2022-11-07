@@ -34,26 +34,30 @@ export const Skills = () => {
           <Col>
             <div className="skill-bx">
               <h2>Skills</h2>
-              <p>Lorem ipsum more text to sample what will be written here</p>
+              <p>
+                Through the bootcamp we have learned many skills like fetching
+                api's, building back end applications with mongoDB, SQL and
+                building out front end applications for the client side.
+              </p>
               <Carousel
                 responsive={responsive}
                 infinite={true}
                 className="skill-slider"
               >
                 <div className="item">
-                  <img src={meter1} alt="Image" />
+                  <img src={meter1} alt=" 95% meter" />
                   <h5>Web Development</h5>
                 </div>
                 <div className="item">
-                  <img src={meter2} alt="Image" />
+                  <img src={meter2} alt="80% meter" />
                   <h5>Code configuration</h5>
                 </div>
                 <div className="item">
-                  <img src={meter3} alt="Image" />
+                  <img src={meter3} alt="90% meter" />
                   <h5>Api fetching</h5>
                 </div>
                 <div className="item">
-                  <img src={meter2} alt="Image" />
+                  <img src={meter2} alt="80% meter" />
                   <h5>Back-End Development</h5>
                 </div>
               </Carousel>

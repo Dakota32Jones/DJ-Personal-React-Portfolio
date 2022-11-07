@@ -71,17 +71,26 @@ export const NavBar = () => {
               >
                 Projects
               </Nav.Link>
+              <Nav.Link
+                href="https://drive.google.com/file/d/1-XumBCsmdj6W9jX3Kr4DwB0Q3F1Lxbjr/view?usp=sharing"
+                className={
+                  activeLink === "resume" ? "active navbar-link" : "navbar-link"
+                }
+                onClick={() => onUpdateActiveLink("home")}
+              >
+                Resume
+              </Nav.Link>
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
-                <a href="#">
-                  <img src={navIcon1} alt="" />
+                <a href="https://www.linkedin.com/in/dakota-jones-ab410123b/">
+                  <img src={navIcon1} alt="linkedin" />
                 </a>
-                <a href="#">
-                  <img src={navIcon2} alt="" />
+                <a href="https://github.com/Dakota32Jones">
+                  <img src={navIcon2} alt="Github" />
                 </a>
-                <a href="#">
-                  <img src={navIcon3} alt="" />
+                <a href="https://drive.google.com/file/d/1-XumBCsmdj6W9jX3Kr4DwB0Q3F1Lxbjr/view?usp=share_link">
+                  <img src={navIcon3} alt="Resume" />
                 </a>
               </div>
               <HashLink to="#connect">

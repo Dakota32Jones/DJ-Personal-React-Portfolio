@@ -5,7 +5,7 @@ import navIcon2 from "../assets/images/nav-icon2.png";
 import navIcon3 from "../assets/images/nav-icon3.png";
 
 export const Footer = () => {
-  retun(
+  return (
     <footer className="footer">
       <Container>
         <Row className="align-items-center">
