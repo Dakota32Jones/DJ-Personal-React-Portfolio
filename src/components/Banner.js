@@ -60,7 +60,13 @@ export const Banner = () => {
               {`Hello I am Dakota Jones `}
               <span className="wrap">{text}</span>
             </h1>
-            <p>lorem Ipsum is fun to write</p>
+            <p>
+              Welcome to my portfolio! I am an aspiring full stack web developer
+              who just graduated from Kansas University's Full Stack Web
+              Development bootcamp. This portfolio shows off some of the skills
+              I have learned while attending this bootcamp. Thank you, I hope
+              you enjoy!
+            </p>
             <button onClick={() => console.log("connect")}>
               Let's Connect <ArrowRightCircle size={25} />
             </button>

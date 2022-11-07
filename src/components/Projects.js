@@ -1,28 +1,31 @@
-import { Col, Container, Nav, Tab } from "react-bootstrap";
+import { Col, Container, Nav, Tab, Row } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
+import projImg from "../assets/images/CLI-employee-tracker.png";
+import projImg2 from "../assets/images/beats-on-the-street.png";
+import projImg3 from "../assets/images/weather-dashboard.png";
 
 export const Projects = () => {
   const projects = [
     {
-      title: "Project 1",
-      description:
-        "Front End application that fetches data from multiple API's.",
+      title: "CLI Employee Tracker",
+      description: "Back End application using CLI to create our own database.",
       imgUrl: projImg,
-      githubRepoUrl: "",
+      githubRepoUrl: "https://github.com/Dakota32Jones/Employee-Tracker",
     },
     {
-      title: "Project 2",
+      title: "Beats on the Streets",
       description:
         "Front End application that fetches data from multiple API's.",
       imgUrl: projImg2,
-      githubRepoUrl: "",
+      githubRepoUrl:
+        "https://github.com/SteveWeed79/project-1-beats-on-the-street/tree/main",
     },
     {
-      title: "Project 3",
+      title: "Weather dashboard",
       description:
-        "Front End application that fetches data from multiple API's.",
+        "Front End application that fetches data from weather API's.",
       imgUrl: projImg3,
-      githubRepoUrl: "",
+      githubRepoUrl: "https://github.com/Dakota32Jones/Weather-Dashboard-",
     },
   ];
   return (
@@ -31,17 +34,24 @@ export const Projects = () => {
         <Row>
           <Col>
             <h2>Projects</h2>
-            <p>Lorem Ipsum</p>
+            <p>
+              Below are some projects I have worked on and took pride in
+              building. Please check these projects out!
+            </p>
             <Tab.Container id="projects-tabs" defaultActiveKey="first">
-              <Nav variant="pills" defaultActiveKey="/home">
+              <Nav
+                variant="pills"
+                className="nav-pills mb-5 justify-content-center align-items-center"
+                id="pills-tab"
+              >
                 <Nav.Item>
-                  <Nav.Link eventKey={first}>Tab One</Nav.Link>
+                  <Nav.Link eventKey="first">Tab One</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link eventKey={second}>Tab Two</Nav.Link>
+                  <Nav.Link eventKey="second">Tab Two</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link eventKey={third}>Tab Three</Nav.Link>
+                  <Nav.Link eventKey="third">Tab Three</Nav.Link>
                 </Nav.Item>
                 {/* need to add tab pane tomorrow for projects */}
               </Nav>
@@ -53,8 +63,12 @@ export const Projects = () => {
                     })}
                   </Row>
                 </Tab.Pane>
-                <Tab.Pane eventKey="second">Lorem Ipsum</Tab.Pane>
-                <Tab.Pane eventKey="third">Lorem Ipsum</Tab.Pane>
+                <Tab.Pane eventKey="second">
+                  More projects will be inserted here at a later time!
+                </Tab.Pane>
+                <Tab.Pane eventKey="third">
+                  More projects will be inserted here at a later time!
+                </Tab.Pane>
               </Tab.Content>
             </Tab.Container>
           </Col>
