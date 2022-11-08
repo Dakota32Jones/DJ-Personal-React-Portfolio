@@ -72,7 +72,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 ## Usage
 
-A link to the deployed app on github pages will be [here]()
+A link to the deployed app on github pages will be [here](https://dakota32jones.github.io/DJ-Personal-React-Portfolio/)
 
 ![Application running top](./src/assets/images/App%20running%201.png)
 ![Application running middle](./src/assets/images/App%20running%202.png)
