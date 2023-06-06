@@ -1,6 +1,6 @@
 import { Col, Container, Nav, Tab, Row } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-// import projImg from "../assets/images/CLI-employee-tracker.png";
+//  qimport projImg from "../assets/images/CLI-employee-tracker.png";
 import projImg2 from "../assets/images/beats-on-the-street.png";
 import projImg3 from "../assets/images/weather-dashboard.png";
 import projImg4 from "../assets/images/note-taker-proj.png";
@@ -12,8 +12,7 @@ export const Projects = () => {
       description:
         "Note Taking application where a user can save notes and delete them.",
       imgUrl: projImg4,
-      githubRepoUrl:
-        "https://dakota32jones.github.io/DJ-Personal-React-Portfolio/#home",
+      githubRepoUrl: "https://dj-note-taking-app.herokuapp.com/",
     },
     {
       title: "Beats on the Streets",
