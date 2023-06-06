@@ -1,6 +1,6 @@
 import { Col, Container, Nav, Tab, Row } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg from "../assets/images/CLI-employee-tracker.png";
+// import projImg from "../assets/images/CLI-employee-tracker.png";
 import projImg2 from "../assets/images/beats-on-the-street.png";
 import projImg3 from "../assets/images/weather-dashboard.png";
 import projImg4 from "../assets/images/note-taker-proj.png";
@@ -8,10 +8,12 @@ import projImg4 from "../assets/images/note-taker-proj.png";
 export const Projects = () => {
   const projects = [
     {
-      title: "CLI Employee Tracker",
-      description: "Back End application using CLI to create our own database.",
-      imgUrl: projImg,
-      githubRepoUrl: "https://github.com/Dakota32Jones/Employee-Tracker",
+      title: "Note Taker App",
+      description:
+        "Note Taking application where a user can save notes and delete them.",
+      imgUrl: projImg4,
+      githubRepoUrl:
+        "https://dakota32jones.github.io/DJ-Personal-React-Portfolio/#home",
     },
     {
       title: "Beats on the Streets",
@@ -27,14 +29,6 @@ export const Projects = () => {
         "Front End application that fetches data from weather API's.",
       imgUrl: projImg3,
       githubRepoUrl: "https://github.com/Dakota32Jones/Weather-Dashboard-",
-    },
-    {
-      title: "Note Taker App",
-      description:
-        "Note Taking application where a user can save notes and delete them.",
-      imgUrl: projImg4,
-      githubRepoUrl:
-        "https://dakota32jones.github.io/DJ-Personal-React-Portfolio/#home",
     },
   ];
   return (
