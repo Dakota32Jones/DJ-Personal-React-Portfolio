@@ -1,9 +1,10 @@
 import { Col, Container, Nav, Tab, Row } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 //  qimport projImg from "../assets/images/CLI-employee-tracker.png";
-import projImg2 from "../assets/images/beats-on-the-street.png";
-import projImg3 from "../assets/images/weather-dashboard.png";
+import projImg2 from "../assets/images/coding-quiz.jpg";
+import projImg3 from "../assets/images/Tech-blog.jpg";
 import projImg4 from "../assets/images/note-taker-proj.png";
+import projImg5 from "../assets/images/AAU-Website.jpg";
 
 export const Projects = () => {
   const projects = [
@@ -15,19 +16,25 @@ export const Projects = () => {
       githubRepoUrl: "https://dj-note-taking-app.herokuapp.com/",
     },
     {
-      title: "Beats on the Streets",
+      title: "Coding Quiz",
       description:
-        "Front End application that fetches data from multiple API's.",
+        "Front End application that tracks user score and updates points from quiz",
       imgUrl: projImg2,
-      githubRepoUrl:
-        "https://github.com/SteveWeed79/project-1-beats-on-the-street/tree/main",
+      githubRepoUrl: "https://dakota32jones.github.io/coding-quiz/",
     },
     {
-      title: "Weather dashboard",
+      title: "Tech Blog",
       description:
-        "Front End application that fetches data from weather API's.",
+        "Front End application that allows users to input data and see other's comments. Similar to facebook",
       imgUrl: projImg3,
-      githubRepoUrl: "https://github.com/Dakota32Jones/Weather-Dashboard-",
+      githubRepoUrl: "https://tech-blog-dashboard.herokuapp.com/login/",
+    },
+    {
+      title: "AUU Wesbite ",
+      description:
+        "Front End application that allows users interact with the website. Also shows front end UI/UX design skills.",
+      imgUrl: projImg5,
+      githubRepoUrl: "https://dakota32jones.github.io/AUU-Website/index.html",
     },
   ];
   return (
